@@ -1,0 +1,61 @@
+.header{
+        
+    padding: 10px 350px ;
+    
+    top: 0;
+    background-color: #f5ddbc;
+    border: 1px solid #a38f73;
+
+    display: flex;
+    justify-content: right;
+
+    div{
+        margin-left: 20px;
+        padding: 5px;
+        border: 1px solid #a38f73;
+        -webkit-user-select: none;
+        cursor: pointer;
+        border-radius: 4px;
+
+        &:hover{
+            background-color: #c9b598;
+        }
+        &:active{
+            background-color: #998a73;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    img{
+        width: 31px;
+        height: 31px;
+        cursor: pointer;
+        
+    }
+    .header_dropDown {
+        margin-top: 50px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: #f5ddbc;
+        padding: 5px 0px;
+        span {
+            padding: 5px;
+            cursor: pointer;
+            &:hover {
+                background-color: #c9b598;
+            }
+            &:active{
+                background-color: #998a73;
+            }
+        }
+
+        &:hover{
+            background-color: #f5ddbc;
+            cursor: default;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.main{
+        
+    display: flex;
+    height: 80%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+//padding: 50px;
+    .container {
+        background-color: #f8f2ea;
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #a38f73;
+        border-radius: 0px 0px 5px 5px;
+        .main_header {
+            padding: 50px;
+        }
+
+        .content{
+            padding: 0px 50px;
+            display: flex;
+            flex-direction: column;
+
+            .content_item {
+                div {
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                .tests {
+                    padding: 20px;
+                    .test_item {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.Login{
+        
+        display: flex;
+        height: 80%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        .container {
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #a38f73;
+            border-radius: 5px;
+
+            input{
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                border: 1px solid #a38f7370;
+                margin-top: 20px;
+                padding: 10px;
+                background-color: #f7f2ec;
+
+                &:focus{
+                    background-color: #fcfaf7;
+                    border: 1px solid #a38f73;
+                }
+            }
+
+            div{
+                padding: 5px;
+                border: 1px solid #a38f73;
+                -webkit-user-select: none;
+                cursor: pointer;
+                border-radius: 4px;
+                margin-top: 20px;
+                width: min-content;
+                align-self: center;
+                &:hover{
+                    background-color: #c9b598;
+                }
+                &:active{
+                    background-color: #998a73;
+                }
+            }
+        }
+    }
