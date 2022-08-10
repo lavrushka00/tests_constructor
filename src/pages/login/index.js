@@ -17,18 +17,9 @@ const Login = () => {
   const user = useSelector((state) => state.userSlice);
   const isAuth = useSelector(isAuthSelector)
   const dispatch = useDispatch();
- 
 
-  const [position, setPosition] = useState(0)
 
-  useEffect(() => {
-    console.log(position)
-    window.addEventListener("scroll", () => setPosition(window.scrollY));
-    console.log("hi")
-    return () => {
-      window.removeEventListener("scrol", () => position)
-    }
-}, [position]);
+  
 
 
 
@@ -58,8 +49,8 @@ const Login = () => {
  
   };
  
-
-if(isAuth.authorization)
+console.log("@@@@@", isAuth)
+if(isAuth)
 {
   return <Navigate to = '/main'/>
 }

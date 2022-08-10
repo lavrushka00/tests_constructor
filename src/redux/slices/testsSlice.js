@@ -1,9 +1,9 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import axios from "axios";
+import axios from "./../../axios";
 
 
 export const fetchTests = createAsyncThunk("http://localhost:3001/api/getAllUsersTests", async (params) => {
-    const {data} =  await axios.post('http://localhost:3001/api/getAllUsersTests', {
+    const {data} =  await axios.post('/api/getAllUsersTests', {
         author_id: params
     })
     return data

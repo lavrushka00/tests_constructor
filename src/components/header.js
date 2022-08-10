@@ -14,7 +14,7 @@ const Header = () => {
   // console.log(data)
   return (
     <div className="header">
-      {isAuth.authorization ? (
+      {isAuth ? (
         <>
           <img src={profile} alt="" onClick={() => setDropDown(!dropDown)}/>
           {dropDown ? (
